@@ -1,5 +1,3 @@
-﻿# Emotion-Detection-LY-
+﻿# Emotion-Detection-LY
 
-
-
-#Demo Testing
+# testing: 21st Sept 2025
