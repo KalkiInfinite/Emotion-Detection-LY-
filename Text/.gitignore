@@ -1,0 +1,126 @@
+# Emotion Detection Project - .gitignore
+# =====================================
+
+# Model files (too large for Git - use Git LFS or cloud storage)
+saved_emotion_model/
+saved_*_model/
+*.safetensors
+*.bin
+
+# Training artifacts and results
+emotion_model_results/
+runs/
+logs/
+checkpoints/
+
+# Generated plots and images (keep important ones for README)
+# *.png  # Commented out to keep confusion_matrix.png and other important plots
+# *.jpg  # Commented out to keep visualization images
+# *.jpeg # Commented out to keep visualization images
+*.pdf
+plots/
+figures/
+
+# Keep these specific images for documentation:
+# - confusion_matrix.png
+# - model_performance_plots.png
+# - any visualization images for README
+
+# Output and result files
+batch_prediction_results.txt
+*.csv
+*.tsv
+results/
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Data files (if large)
+data/
+datasets/
+*.zip
+*.tar.gz
+
+# Environment variables
+.env.local
+.env.production
+.env.development
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# Cache directories
+.cache/
+.pytest_cache/
+
+# Weights & Biases (if used)
+wandb/
+
+# TensorBoard logs
+tensorboard_logs/
+
+# Hugging Face cache (optional - can be large)
+# .cache/huggingface/
+
+# Sample and temporary text files
+sample_texts.txt
+temp_*.txt
