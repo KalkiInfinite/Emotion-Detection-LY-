@@ -98,7 +98,7 @@ Available examples:
 
 After training, you can expect the following performance on the test set:
 
-![Confusion Matrix](./confusion_matrix.png)
+![Confusion Matrix](./Text/confusion_matrix.png)
 
 **Typical Results:**
 - **Test Accuracy**: 92.75%
