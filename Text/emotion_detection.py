@@ -1,15 +1,3 @@
-"""
-Emotion Detection using Transformer Models
-==========================================
-
-This script implements a complete pipeline for emotion detection from text using
-transformer models (BERT/RoBERTa). It includes data loading, preprocessing, 
-training, evaluation, and inference capabilities.
-
-Author: AI Assistant
-Date: September 2025
-"""
-
 import os
 import torch
 import numpy as np

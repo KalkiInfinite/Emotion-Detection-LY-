@@ -1,14 +1,3 @@
-"""
-Streamlit App for Text Emotion Detection
-=========================================
-
-A web interface for predicting emotions in text using fine-tuned BERT models.
-Supports single text analysis, batch processing, and visualization of results.
-
-Author: AI Assistant
-Date: October 2025
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
