@@ -91,14 +91,28 @@ class EmotionClassifier:
         
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-            self.model = AutoModelForSequenceClassification.from_pretrained(
-                self.model_name,
-                num_labels=self.num_labels,
-                id2label=self.emotion_labels,
-                label2id=self.label_to_id
-            )
+            
+            # Check if this is a pre-trained emotion model
+            if "emotion" in self.model_name or "sentiment" in self.model_name:
+                # Load pre-trained emotion model as-is
+                self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name)
+                # Update emotion labels if it's a different model
+                if hasattr(self.model.config, 'id2label'):
+                    self.emotion_labels = self.model.config.id2label
+                    self.label_to_id = {v: k for k, v in self.emotion_labels.items()}
+                    self.num_labels = len(self.emotion_labels)
+            else:
+                # Load base model for training
+                self.model = AutoModelForSequenceClassification.from_pretrained(
+                    self.model_name,
+                    num_labels=self.num_labels,
+                    id2label=self.emotion_labels,
+                    label2id=self.label_to_id
+                )
+            
             self.model.to(self.device)
             print("✅ Model and tokenizer loaded successfully!")
+            print(f"🎭 Emotion labels: {list(self.emotion_labels.values())}")
             
         except Exception as e:
             print(f"❌ Error loading model: {str(e)}")

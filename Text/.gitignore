@@ -1,11 +1,13 @@
 # Emotion Detection Project - .gitignore
 # =====================================
 
-# Model files (too large for Git - use Git LFS or cloud storage)
-saved_emotion_model/
-saved_*_model/
-*.safetensors
-*.bin
+# Model files - Using Git LFS for large files
+# saved_emotion_model/ - Now tracked with Git LFS
+# *.safetensors - Now tracked with Git LFS  
+# *.bin - Now tracked with Git LFS
+
+# Other large model directories (if any)
+saved_*_model_backup/
 
 # Training artifacts and results
 emotion_model_results/
@@ -124,3 +126,8 @@ tensorboard_logs/
 # Sample and temporary text files
 sample_texts.txt
 temp_*.txt
+
+# Streamlit
+.streamlit/
+__pycache__/
+*.pyc
