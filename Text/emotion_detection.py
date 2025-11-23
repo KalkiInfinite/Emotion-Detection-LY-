@@ -514,12 +514,30 @@ def main():
         raise
 
 
+def evaluate_saved_model():
+    """Evaluate the saved model on the test set without retraining."""
+    print("\n=== Evaluating Saved Model ===")
+    classifier = EmotionClassifier()
+    classifier.load_saved_model("./saved_emotion_model")
+    dataset = classifier.load_dataset()
+    tokenized_dataset = classifier.preprocess_dataset(dataset)
+    # Setup trainer for evaluation (no retraining)
+    classifier.setup_training(tokenized_dataset)
+    eval_results, y_true, y_pred = classifier.evaluate_model(tokenized_dataset)
+    print(f"\n🏆 Test Accuracy: {eval_results['eval_accuracy']:.4f}")
+    print(f"🎯 Test F1 Score: {eval_results['eval_f1']:.4f}")
+    print("============================\n")
+
+
 if __name__ == "__main__":
-    # Run the complete pipeline
-    trained_classifier = main()
-    
-    print("\n" + "="*60)
-    print("✨ You can now use the trained model to predict emotions!")
-    print("Example usage:")
-    print("trained_classifier.predict_emotion('Your text here')")
-    print("="*60)
+    import sys
+    if len(sys.argv) > 1 and sys.argv[1] == "evaluate":
+        evaluate_saved_model()
+    else:
+        # Run the complete pipeline
+        trained_classifier = main()
+        print("\n" + "="*60)
+        print("✨ You can now use the trained model to predict emotions!")
+        print("Example usage:")
+        print("trained_classifier.predict_emotion('Your text here')")
+        print("="*60)
