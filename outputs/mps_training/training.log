@@ -1,0 +1,12 @@
+2025-10-05 16:30:36,664 - INFO - 🚀 Starting MPS-accelerated training for 20 epochs
+2025-10-05 16:30:36,664 - INFO - Device: mps
+2025-10-05 16:30:36,664 - INFO - Model: ViTEmotionClassifier
+2025-10-05 16:30:36,664 - INFO - Training samples: 100022
+2025-10-05 16:30:36,664 - INFO - Validation samples: 10201
+2025-10-05 16:31:06,195 - INFO - Epoch 1, Batch 1/1563 (0.1%), Loss: 2.7427, Acc: 15.62%
+2025-10-05 16:32:50,399 - INFO - 🚀 Starting MPS-accelerated training for 10 epochs
+2025-10-05 16:32:50,399 - INFO - Device: mps
+2025-10-05 16:32:50,399 - INFO - Model: ViTEmotionClassifier
+2025-10-05 16:32:50,399 - INFO - Training samples: 100022
+2025-10-05 16:32:50,399 - INFO - Validation samples: 10201
+2025-10-05 16:33:00,726 - INFO - Epoch 1, Batch 1/3126 (0.0%), Loss: 2.4967, Acc: 18.75%

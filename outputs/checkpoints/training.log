@@ -1,0 +1,21 @@
+2025-10-05 15:25:56,969 - INFO - Starting training for 3 epochs
+2025-10-05 15:25:56,969 - INFO - Device: cpu
+2025-10-05 15:25:56,969 - INFO - Model: ViTEmotionClassifier
+2025-10-05 15:25:56,969 - INFO - Training samples: 49
+2025-10-05 15:25:56,969 - INFO - Validation samples: 10
+2025-10-05 15:26:06,276 - INFO - Epoch 1, Batch 0/13, Loss: 2.2691, Acc: 0.00%
+2025-10-05 15:27:00,584 - INFO - Epoch 1/3 - Time: 63.61s
+2025-10-05 15:27:00,584 - INFO - Train Loss: 2.4769, Train Acc: 8.16%
+2025-10-05 15:27:00,584 - INFO - Val Loss: 2.2126, Val Acc: 10.00%
+2025-10-05 15:27:05,975 - INFO - New best model saved with validation accuracy: 10.00%
+2025-10-05 15:27:18,341 - INFO - Epoch 2, Batch 0/13, Loss: 2.0691, Acc: 0.00%
+2025-10-05 15:28:22,350 - INFO - Epoch 2/3 - Time: 76.37s
+2025-10-05 15:28:22,351 - INFO - Train Loss: 2.3778, Train Acc: 12.24%
+2025-10-05 15:28:22,351 - INFO - Val Loss: 2.2615, Val Acc: 20.00%
+2025-10-05 15:28:25,641 - INFO - New best model saved with validation accuracy: 20.00%
+2025-10-05 15:28:35,541 - INFO - Epoch 3, Batch 0/13, Loss: 2.5749, Acc: 0.00%
+2025-10-05 15:29:30,374 - INFO - Epoch 3/3 - Time: 64.73s
+2025-10-05 15:29:30,375 - INFO - Train Loss: 2.4012, Train Acc: 6.12%
+2025-10-05 15:29:30,375 - INFO - Val Loss: 2.1794, Val Acc: 20.00%
+2025-10-05 15:29:30,625 - INFO - Training completed in 213.66s
+2025-10-05 15:29:30,625 - INFO - Best validation accuracy: 20.00% (Epoch 2)

@@ -1,0 +1,11 @@
+2025-10-05 15:57:39,645 - INFO - Starting training for 5 epochs
+2025-10-05 15:57:39,645 - INFO - Device: cpu
+2025-10-05 15:57:39,645 - INFO - Model: ViTEmotionClassifier
+2025-10-05 15:57:39,646 - INFO - Training samples: 100022
+2025-10-05 15:57:39,646 - INFO - Validation samples: 10201
+2025-10-05 15:58:02,038 - INFO - Epoch 1, Batch 0/6252, Loss: 2.6712, Acc: 18.75%
+2025-10-05 16:03:20,157 - INFO - Epoch 1, Batch 100/6252, Loss: 1.6373, Acc: 22.59%
+2025-10-05 16:08:17,221 - INFO - Epoch 1, Batch 200/6252, Loss: 1.3627, Acc: 31.53%
+2025-10-05 16:14:50,850 - INFO - Epoch 1, Batch 300/6252, Loss: 1.9121, Acc: 37.67%
+2025-10-05 16:20:02,707 - INFO - Epoch 1, Batch 400/6252, Loss: 0.9099, Acc: 42.11%
+2025-10-05 16:26:29,696 - INFO - Epoch 1, Batch 500/6252, Loss: 1.3028, Acc: 46.15%
