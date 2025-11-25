@@ -195,12 +195,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Hugging Face Transformers** for the BERT model
 - **dair-ai/emotion** dataset for training data
 
-## 📞 Contact
-
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-
----
-
 **⭐ Star this repository if you found it helpful!**
