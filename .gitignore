@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+
+# Datasets (too large for GitHub)
+data/*/
+archive/
+archive (2)/
+archive (3)/
+YOLO_format/
+
+# Model outputs and checkpoints
+outputs/
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
